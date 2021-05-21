@@ -25,10 +25,19 @@ table, tr, th, td {
     font-size: 120%;
     text-transform: uppercase;
 }
+.logo {
+    width: 50px;
+}
 img {
     width: 25%;
     border-style: ridge;
     border-color: white;
     border-radius: 10px;
     margin-top: 10px;
+}
+.navbar {
+    background-color: black;
+}
+.card {
+    background-color: darkgrey;
 }
