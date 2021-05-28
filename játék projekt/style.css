@@ -5,8 +5,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    background-size: cover;
+padding-left: 5px;
 }
 h1 {
     text-align: center;
@@ -22,22 +22,32 @@ table, tr, th, td {
 }
 .fejlec {
     color: #FFFFFF;
-    font-size: 120%;
+    font-size: 110%;
     text-transform: uppercase;
 }
 .logo {
     width: 50px;
 }
 img {
-    width: 25%;
+    width: 400px;
     border-style: ridge;
     border-color: white;
     border-radius: 10px;
     margin-top: 10px;
+    
 }
 .navbar {
     background-color: black;
 }
 .card {
     background-color: darkgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#kep {
+    margin-left: 10px;
+}
+.forras {
+    float: right;
+    margin-right: 30px;
 }

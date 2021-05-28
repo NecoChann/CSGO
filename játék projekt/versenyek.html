@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="https://blog.counter-strike.net/"><img class="logo" src="CS1.png" alt="CSGO"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Főoldal <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Főoldal <span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="versenyek.html">Versenyek <span class="sr-only"></span></a>
@@ -32,20 +32,21 @@
     <header class="container">
         <h1>Versenyek</h1>
     </header>
-    <main><p>A játékban nagy szerepet kaptak a versenyek, ahol a világ minden részéről érkeznek csapatok, hogy összemérjék tudásukat és bezsebeljék a a hírnevet, a pénzt és a kupát.</p>
-    <h2>Az utóbbi 3 év bajnokságai</h2>
+    <main>
+    <p class="text-center">A játékban nagy szerepet kaptak a versenyek, ahol a világ minden részéről érkeznek csapatok, hogy összemérjék tudásukat és bezsebeljék a a hírnevet, a pénzt és a kupát.</p>
+    <h2 class="text-center">Az utóbbi 3 év bajnokságai</h2>
    
-    <table>
+    <table class="table text-white">
         <thead>
             <tr class="fejlec">
-                <th>Év</th>
-                <th>Időpont</th>
-                <th>Bajnokság</th>
-                <th>Helyszín</th>
-                <th>Csapatok száma</th>
-                <th>Győztes</th>
-                <th>Második helyezett</th>
-                <th>Harmadik helyezettek</th>
+                <th scope="col">Év</th>
+                <th scope="col">Időpont</th>
+                <th scope="col">Bajnokság</th>
+                <th scope="col">Helyszín</th>
+                <th scope="col" class="d-none d-md-table-cell">Csapatok száma</th>
+                <th scope="col">Győztes</th>
+                <th scope="col" class="d-none d-md-table-cell">Második helyezett</th>
+                <th scope="col" class="d-none d-lg-table-cell">Harmadik helyezettek</th>
             </tr>
         </thead>
         <tbody>
@@ -54,18 +55,18 @@
                 <td>Január 12.- Január 28.</td>
                 <td>ELEAGUE Major Boston 2018</td>
                 <td> Boston, Massachusetts</td>
-                <td rowspan="4">24</td>
+                <td rowspan="4" class="d-none d-md-table-cell">24</td>
                 <td>Cloud9</td>
-                <td>FaZe Clan</td>
-                <td>Natus Vincere, SK Gaming</td>
+                <td class="d-none d-md-table-cell">FaZe Clan</td>
+                <td class="d-none d-lg-table-cell">Natus Vincere, SK Gaming</td>
             </tr>
             <tr>
                 <td>Szeptember 5.- Szeptember 23.</td>
                 <td>FACEIT Major London 2018</td>
                 <td>London, Egyesült Királyság</td>
                 <td>Astralis</td>
-                <td>Natus Vincere</td>
-                <td>MIBR, Team Liquid</td>
+                <td class="d-none d-md-table-cell">Natus Vincere</td>
+                <td class="d-none d-lg-table-cell">MIBR, Team Liquid</td>
             </tr>
             <tr>
                 <td rowspan="2">2019</td>
@@ -73,22 +74,23 @@
                 <td>IEM Katowice Major 2019</td>
                 <td>Katowice, Lengyelország</td>
                 <td>Astralis</td>
-                <td>ENCE eSports</td>
-                <td>MIBR, Natus Vincere</td>
+                <td class="d-none d-md-table-cell">ENCE eSports</td>
+                <td class="d-none d-lg-table-cell">MIBR, Natus Vincere</td>
             </tr>
             <tr>
                 <td>Augusztus 20.- Szeptember 8.</td>
                 <td>StarLadder Berlin Major 2019</td>
                 <td>Berlin, Németország</td>
                 <td>Astralis</td>
-                <td>AVANGAR</td>
-                <td>Renegades, NRG Esports</td>
+                <td class="d-none d-md-table-cell">AVANGAR</td>
+                <td class="d-none d-lg-table-cell">Renegades, NRG Esports</td>
             </tr>
         </tbody>
     </table>
+    <h2 class="forras"><a href="https://www.hltv.org/news/24870/astralis-take-down-navi-2-0-to-win-faceit-major">Forrás</a></h2>
 </main>
 <footer>
-
+  &copy; Necek Dániel
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
